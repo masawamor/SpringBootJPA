@@ -27,6 +27,7 @@ public class EmployeeContoroller {
 	@PostMapping("/employee/add")
 	public List<Employee> add(@ModelAttribute Employee employee) {
 		repository.save(employee);
-		return repository.findAll();
+		List<Employee> list =  repository.findAll();
+		return list;
 	}
 }

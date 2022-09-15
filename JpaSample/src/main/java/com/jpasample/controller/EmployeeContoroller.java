@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 public class EmployeeContoroller {
 
 	private final EmployeeRepository repository;
-	
+
 	@GetMapping("/employee/show")
 	public List<Employee> showList() {
 		List<Employee> list = repository.findAll();
@@ -29,5 +29,4 @@ public class EmployeeContoroller {
 		repository.save(employee);
 		return repository.findAll();
 	}
-	
 }

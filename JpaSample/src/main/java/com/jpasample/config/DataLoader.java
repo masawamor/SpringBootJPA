@@ -25,15 +25,15 @@ public class DataLoader implements ApplicationRunner {
 		department.setName("Department1");
 		departmentRepository.save(department);
 		
-		var employee = new Employee();
-		employee.setName("Masawa Morishita");
-		employee.setDepartment(department);
-		employeeRepository.save(employee);
+		var employee1 = new Employee();
+		employee1.setName("Masawa Morishita");
+		employee1.setDepartment(department);
+		employeeRepository.save(employee1);
 
-		var testEmployee = new Employee();
-		testEmployee.setName("Aoki Takeshi");
-		testEmployee.setDepartment(department);
-		employeeRepository.save(testEmployee);
+		var employee2 = new Employee();
+		employee2.setName("Aoki Takeshi");
+		employee2.setDepartment(department);
+		employeeRepository.save(employee2);
 	}
 	
 }
